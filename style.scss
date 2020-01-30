@@ -6,17 +6,18 @@ $light:#f3f3f3;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
     font-size:1rem;
+    text-align:center;
 }
 html{
     height:100%;
 }
 body{
     height:100%;
-    background: dark;
+    background: $light;
     }
 h1{
     font-size:2rem;
-    color:light;
+    color:$dark;
     text-align: center;
 }
     p{font-size:0.8rem;
@@ -28,7 +29,6 @@ h1{
     min-width:200px;
     height:300px;
     margin:0px auto;
-    padding:10px;
     text-align: center;
 }
 .input{
@@ -38,13 +38,14 @@ h1{
     height:15%;
     font-size:1rem;
     border:none;
-    border-bottom:3px solid white;
+    border-bottom:3px solid $dark;
     background:none;
     outline:none;
     text-align:center;
     line-height:2.5em;
     font-weight:bold;
-    color:light;
+    color:$dark;
+    padding:0px;
 }
 .inputbox{
     display: block; 
@@ -57,7 +58,10 @@ h1{
     text-align: center;
     background:none;
     outline:none;
-    color:light;
+    color:$dark;
+}
+.inputbox:focus{
+    font-weight:bold;
 }
 .inputbox::-webkit-outer-spin-button,
 .inputbox::-webkit-inner-spin-button{
@@ -67,10 +71,12 @@ h1{
 .button{
     width:100%;
     height:10%;
-    margin-top:5%;
-    color:dark;
-    background:light;
+    padding:0px;
+    margin-top:5% auto 0px auto;
+    color:$light;
+    background:$dark;
     border:none;
+    min-width:200px;
 }
 #birthdayResultContainer{
     margin:20px auto;
@@ -78,7 +84,7 @@ h1{
     width:60%;
     min-width:200px;
     line-height: 1.5;
-    color:light;
+    color:$dark;
     font-weight:bold;
 }
 
