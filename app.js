@@ -55,8 +55,9 @@ function ageCalc(birth,today){
     };
 
 //main function to be run on the button click event. 
-var submit = document.getElementById('submit');
-submit.addEventListener('click', event => {
+var send = document.getElementById('send');
+send.addEventListener('click', (event) => {
+        event.preventDefault();
        const birthdayResultContainer = document.getElementById('birthdayResultContainer');
     birthdayResultContainer.innerHTML = ''; // This ensures the previous result is wiped before the function runs.
         let dayOfBirth = parseInt(document.getElementById('dayOfBirth').value);
